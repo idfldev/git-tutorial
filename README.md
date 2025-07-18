@@ -133,3 +133,40 @@ git branch -d tên_nhánh
 git rebase tên_nhánh
 ```
 
+### 1. Kiểm Tra Số Lượng Tệp Trong Thư Mục
+```bash
+find . -type f | wc -l
+
+find . -type f: Tìm tất cả các tệp (files) trong thư mục hiện tại và các thư mục con.
+wc -l: Đếm số lượng dòng, tức là số lượng tệp.
+```
+
+### 2. Kiểm Tra Số Lượng Tệp Đã Được Theo Dõi Bởi Git
+```bash
+git ls-files | wc -l
+
+git ls-files: Liệt kê tất cả các tệp mà Git đang theo dõi.
+wc -l: Đếm số lượng tệp trong danh sách.
+
+```
+
+### 3. Kiểm Tra Số Lượng Tệp Chưa Được Theo Dõi 
+```bash
+git status --porcelain | grep '^??' | wc -l
+
+git status --porcelain: Hiển thị trạng thái của kho chứa theo dạng dễ đọc.
+grep '^??': Lọc ra các tệp chưa được theo dõi.
+wc -l: Đếm số lượng tệp chưa được theo dõi.
+```
+
+### Bước 1: Mở file README.md 
+```bash
+nano README.md
+```
+
+### Bước 2: Thêm Dòng Mới
+```bash
+Bước 3: Lưu File
+Nếu bạn đang dùng nano, bạn có thể lưu và thoát bằng cách nhấn Ctrl + O, sau đó nhấn Enter, và cuối cùng nhấn Ctrl + X để thoát.
+Nếu bạn dùng vim, nhấn Esc, gõ :wq, và nhấn Enter.
+```
