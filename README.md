@@ -9,6 +9,7 @@
 6. [Làm Việc Với Kho Chứa Từ Xa](#làm-việc-với-kho-chứa-từ-xa)
 7. [Kỹ Thuật Nâng Cao](#kỹ-thuật-nâng-cao)
 8. [Tài Nguyên Bổ Sung](#tài-nguyên-bổ-sung)
+9. [https://training.github.com/downloads/submodule-vs-subtree-cheat-sheet/](git basic training).
 
 ## Giới Thiệu
 Git là một hệ thống quản lý phiên bản phân tán, 
